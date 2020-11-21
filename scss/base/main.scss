@@ -1,11 +1,22 @@
 @import "../base/_fonts";
 @import "../base/_colors";
 @import "../base/_reset";
-@import "../base/_functions-em";
 @import "../base/_functions";
+@import "../base/_functions-em";
+
+
+
 @import "../components/_header";
 @import "../components/_main-menu";
 @import "../components/_logo";
+@import "../components/intro";
 @import "../components/footer";
 @import "../components/_modal";
+@import "../components/_btn";
+@import "../components/_users";
+@import "../components/_overview";
+@import "../components/_sense";
+
+
+@import "../pages_scss/page.scss";
 
