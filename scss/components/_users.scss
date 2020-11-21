@@ -1,0 +1,74 @@
+$f-n_400: "Nunito-Regular", sans-serif;
+$f-n_700: "Nunito-Bold", sans-serif;
+$f-n_800: "Nunito-ExtraBold", sans-serif;
+.users {
+margin-bottom: rem-calc(140);
+    // .users__inner
+
+    &__inner {
+    }
+
+    // .users__title
+
+    &__title {
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom:  rem-calc(90);
+    }
+
+    // .users__list
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        // grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 70px;
+        grid-row-gap: 5px;
+        padding-bottom: rem-calc(40);
+    }
+}
+
+.users-card {
+background-color: #3C4070;
+      //.users-card__inner
+&__inner{
+    padding: rem-calc(31 21 0 21);
+
+}
+    // .users-card__title
+
+    &__title {
+        font-family: $f-n_700;
+font-size: rem-calc(24);
+line-height: rem-calc(33);
+font-weight: 700;
+text-align: center;
+color: #ffffff;
+margin-bottom: rem-calc(5);
+
+    }
+
+    // .users-card__text
+
+    &__text {
+        font-family: $f-n_400;
+font-size: rem-calc(18);
+font-style: normal;
+font-weight: 400;
+line-height: rem-calc(28);
+text-align: center;
+color: rgba($color: #ffffff, $alpha: 0.8);
+
+    }
+
+    // .users-card__img
+
+    &__img {
+        & img{
+            object-fit: contain;
+            max-height: rem-calc(290);
+            margin-bottom: rem-calc(-90);
+        }
+    }
+}

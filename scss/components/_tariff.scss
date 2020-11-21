@@ -1,0 +1,132 @@
+.tariff {
+margin-bottom:rem-calc(140) ;
+    // .tariff__inner
+
+    &__inner {
+    }
+
+    // .tariff__title
+
+    &__title {
+        color:#ffffff;
+        text-align: center;
+        margin-bottom: rem-calc(200);
+    }
+
+    // .tariff__list
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        // grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 23px;
+        grid-row-gap: 5px;
+    }
+}
+
+.tariff-card {
+    position: relative;
+background-color: $c-bac_card;
+    // .tariff-card__inner
+
+    &__inner {
+        
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding:rem-calc(67);
+        
+    }
+
+    // .tariff-card__img
+
+    &__img {
+        position: absolute;
+        top:rem-calc(0) ;
+        left: 50%;
+        transform: translate(-50%);
+        &_1{
+            top:rem-calc(-80) ;
+        }
+        &_2{
+            top:rem-calc(-120) ;
+        }
+        &_3{
+            top:rem-calc(-140) ;
+        }
+    }
+
+    // .tariff-card__title
+
+    &__title {
+        font-family: $f-n_900;
+font-size: rem-calc(30);
+font-style: normal;
+font-weight: 900;
+line-height: rem-calc(36);
+text-align: center;
+margin-bottom:rem-calc(25) ;
+text-transform: uppercase;
+
+    }
+
+    // .tariff-card__prise
+
+    &__prise {
+        margin-top: rem-calc(20);
+        & span{
+            font-family: $f-n_700;
+            font-size: rem-calc(30);
+            font-weight: 700;
+            line-height:rem-calc(36);
+            text-align: center;
+            color: #ffffff;
+           
+
+
+        }
+        & p{
+            font-family: $f-n_400;
+            font-size: rem-calc(22);
+            font-weight: 400;
+            line-height:rem-calc(36);
+            text-align: center;
+            color: rgba($color: #ffffff, $alpha: 0.8);
+           
+            
+            
+        }
+    }
+
+    // .tariff-card__list
+
+    &__list {
+      padding: 0;
+      margin-top:rem-calc(25);
+      margin-bottom:rem-calc(35);
+      
+        & li{
+            font-family: $f-n_400;
+            font-size: rem-calc(18);
+            font-weight: 400;
+            line-height:rem-calc(36);
+            text-align:left;
+            color: rgba($color: #ffffff, $alpha: 1);
+            margin-bottom:rem-calc(10);
+            padding-left:  rem-calc(30);
+            background-image: url("/image/check.svg") ;
+            background-repeat: no-repeat;
+            background-size:  rem-calc(12 9);
+            background-position:1% 50%;
+        }
+    }
+
+    // .tariff-card__btn
+
+    &__btn {
+        width: 100%;
+    }
+}

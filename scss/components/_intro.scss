@@ -1,0 +1,47 @@
+.intro {
+
+    // .intro__inner
+
+    &__inner {
+        display: flex;
+        padding: rem-calc(40 0 140 0);
+    }
+
+
+&-text {
+    width: 55%;
+
+    // .intro-text__title
+
+    &__title {
+        text-transform: inherit;
+        color: #ffffff;
+
+    }
+
+    // .intro-text__subtitle
+
+    &__subtitle {
+        max-width: rem-calc(505);
+        font-family: $f-n_400;
+        font-size: rem-calc(22);
+        line-height: rem-calc(35);
+        color: #ffffff;
+        margin-top: rem-calc(12);
+
+    }
+
+    // .intro-text__btn
+
+    &__btn {
+        max-width: rem-calc(312);
+        width: 100%;
+        margin-top:  rem-calc(70);
+    }
+}
+
+
+&-img {
+    width: 45%;
+}
+}

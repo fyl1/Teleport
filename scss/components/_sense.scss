@@ -1,0 +1,203 @@
+.sense {
+margin-bottom:rem-calc(100) ;
+    // .sense__inner
+
+    &__inner {
+        display: block;
+        max-width: 100%;
+    }
+
+    // .sense__title
+
+    &__title {
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: rem-calc(100);
+    }
+
+    // .sense__list
+
+    &__list {
+     
+    }
+}
+
+.sense-card {
+    width: rem-calc(398); 
+float: left;
+background-color: #3C4070;
+box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.14);
+border-radius: 7px;
+height: rem-calc(238);
+margin-bottom: rem-calc(20);
+
+    // .sense-card__width
+    &__width{
+        width: rem-calc(398); 
+    }
+    //  .sense-card--h_X2
+    &--h_X2{
+        height: rem-calc(350);
+    }
+    // .sense-card__inner
+
+    &__inner {
+        position: relative;
+        height: 100%;
+        background-color: #3C4070;
+        display: flex;
+        padding:rem-calc(48 27 0 41);
+        box-sizing: border-box;
+       
+
+
+    }
+
+    // .sense-card__text
+
+    &__text {
+        font-family: $f-n_400;
+        font-size: rem-calc(17);
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+        color: rgba(256, 256, 256, 0.8);
+
+    }
+
+    // .sense-card__title
+
+    &__title {
+        font-family: $f-n_700;
+font-size: rem-calc(22);
+font-weight: 700;
+line-height: 1.1;
+text-align: left;
+color: #ffffff;
+margin-bottom:rem-calc(10) ;
+
+    }
+
+    // .sense-card__img
+
+    &__img {
+       
+        
+
+        & img{
+            object-fit: contain;
+           max-height: rem-calc(190);
+        }
+    }
+    &__num{
+
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: rem-calc(-15);
+        width:rem-calc(40) ;
+        height:rem-calc(40) ;
+        
+font-size: rem-calc(22);
+font-weight: 700;
+line-height: rem-calc(68);
+color: #808795;
+background-color: $с-bac;
+border-radius: 50%;
+transform: translate(-50%);
+
+
+    }
+}
+.sense-card_1{
+ 
+    & .sense-card__text {
+        max-width:rem-calc(180);
+    }
+    & .sense-card__img{
+        position: absolute;
+        bottom: rem-calc(-3);
+        right: rem-calc(0);
+
+    }
+}
+.sense-card_2{
+    & .sense-card__title{
+         max-width: rem-calc(232);
+     }
+     & .sense-card__text p{
+         max-width:rem-calc(215) ;
+     }
+     & .sense-card__img{
+        position: absolute;
+        bottom: rem-calc(0);
+        right: rem-calc(0);
+        & img{
+            max-height:rem-calc(145) ;
+            max-width:rem-calc(100) ;
+        }
+
+    }
+ }
+ .sense-card_3{
+    & .sense-card__title{
+         max-width: rem-calc(219);
+     }
+     & .sense-card__text p{
+         max-width: rem-calc(288);
+     }
+     & .sense-card__img{
+        position: absolute;
+        bottom: rem-calc(-3);
+        right: rem-calc(0);
+       
+
+    }
+ }
+ .sense-card_4{
+    & .sense-card__title{
+         max-width: rem-calc(327);
+     }
+     & .sense-card__text p{
+         max-width:rem-calc(306) ;
+     }
+     & .sense-card__img{
+        position: absolute;
+        bottom: rem-calc(0);
+        right: rem-calc(-20);
+       
+
+    }
+ }
+ .sense-card_5{
+    & .sense-card__title{
+         max-width:rem-calc(252) ;
+     }
+     & .sense-card__text p{
+         max-width:rem-calc(320) ;
+     }
+     & .sense-card__img{
+        position: absolute;
+        bottom: rem-calc(-50);
+        right: rem-calc(20);
+       
+
+    }
+ }
+ .sense-card_6{
+    & .sense-card__title{
+         max-width:rem-calc(277) ;
+     }
+     & .sense-card__text p{
+         max-width:rem-calc(347) ;
+     }
+     & .sense-card__img{
+        position: absolute;
+        bottom: rem-calc(-70);
+        right: rem-calc(20);
+       
+
+    }
+ }

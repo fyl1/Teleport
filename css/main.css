@@ -613,18 +613,6 @@ button:active {
   color: #deeaf5;
 }
 
-.logo {
-  display: block;
-}
-
-.logo__link {
-  white-space: nowrap;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  outline: none;
-}
-
 @media (min-width: 1200px) {
   .menu__box {
     left: 0;
@@ -1334,6 +1322,16 @@ button:active {
   color: #ffffff;
 }
 
+.btn-tariff-card .btn__text {
+  font-family: "Nunito-Bold", sans-serif;
+  font-style: normal;
+  font-size: 1.375rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+}
+
 .users {
   margin-bottom: 8.75rem;
 }
@@ -1404,22 +1402,307 @@ button:active {
   height: 47.6875rem;
 }
 
+.sense {
+  margin-bottom: 6.25rem;
+}
+
 .sense__inner {
   display: block;
   max-width: 100%;
 }
 
+.sense__title {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 6.25rem;
+}
+
 .sense-card {
-  width: 33.3%;
+  width: 24.875rem;
   float: left;
   background-color: #3C4070;
   -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.14);
           box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.14);
   border-radius: 7px;
+  height: 14.875rem;
+  margin-bottom: 1.25rem;
 }
 
 .sense-card__width {
-  width: 33.3%;
+  width: 24.875rem;
+}
+
+.sense-card--h_X2 {
+  height: 21.875rem;
+}
+
+.sense-card__inner {
+  position: relative;
+  height: 100%;
+  background-color: #3C4070;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 1.6875rem 0 2.5625rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sense-card__text {
+  font-family: "Nunito-Regular", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sense-card__title {
+  font-family: "Nunito-Bold", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 0.625rem;
+}
+
+.sense-card__img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 11.875rem;
+}
+
+.sense-card__num {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 50%;
+  top: -0.9375rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 4.25rem;
+  color: #808795;
+  background-color: #202245;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.sense-card_1 .sense-card__text {
+  max-width: 11.25rem;
+}
+
+.sense-card_1 .sense-card__img {
+  position: absolute;
+  bottom: -0.1875rem;
+  right: 0;
+}
+
+.sense-card_2 .sense-card__title {
+  max-width: 14.5rem;
+}
+
+.sense-card_2 .sense-card__text p {
+  max-width: 13.4375rem;
+}
+
+.sense-card_2 .sense-card__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.sense-card_2 .sense-card__img img {
+  max-height: 9.0625rem;
+  max-width: 6.25rem;
+}
+
+.sense-card_3 .sense-card__title {
+  max-width: 13.6875rem;
+}
+
+.sense-card_3 .sense-card__text p {
+  max-width: 18rem;
+}
+
+.sense-card_3 .sense-card__img {
+  position: absolute;
+  bottom: -0.1875rem;
+  right: 0;
+}
+
+.sense-card_4 .sense-card__title {
+  max-width: 20.4375rem;
+}
+
+.sense-card_4 .sense-card__text p {
+  max-width: 19.125rem;
+}
+
+.sense-card_4 .sense-card__img {
+  position: absolute;
+  bottom: 0;
+  right: -1.25rem;
+}
+
+.sense-card_5 .sense-card__title {
+  max-width: 15.75rem;
+}
+
+.sense-card_5 .sense-card__text p {
+  max-width: 20rem;
+}
+
+.sense-card_5 .sense-card__img {
+  position: absolute;
+  bottom: -3.125rem;
+  right: 1.25rem;
+}
+
+.sense-card_6 .sense-card__title {
+  max-width: 17.3125rem;
+}
+
+.sense-card_6 .sense-card__text p {
+  max-width: 21.6875rem;
+}
+
+.sense-card_6 .sense-card__img {
+  position: absolute;
+  bottom: -4.375rem;
+  right: 1.25rem;
+}
+
+.tariff {
+  margin-bottom: 8.75rem;
+}
+
+.tariff__title {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 12.5rem;
+}
+
+.tariff__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 23px;
+  grid-row-gap: 5px;
+}
+
+.tariff-card {
+  position: relative;
+  background-color: #3C4070;
+}
+
+.tariff-card__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4.1875rem;
+}
+
+.tariff-card__img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.tariff-card__img_1 {
+  top: -5rem;
+}
+
+.tariff-card__img_2 {
+  top: -7.5rem;
+}
+
+.tariff-card__img_3 {
+  top: -8.75rem;
+}
+
+.tariff-card__title {
+  font-family: "Nunito-Black", sans-serif;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.25rem;
+  text-align: center;
+  margin-bottom: 1.5625rem;
+  text-transform: uppercase;
+}
+
+.tariff-card__prise {
+  margin-top: 1.25rem;
+}
+
+.tariff-card__prise span {
+  font-family: "Nunito-Bold", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tariff-card__prise p {
+  font-family: "Nunito-Regular", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tariff-card__list {
+  padding: 0;
+  margin-top: 1.5625rem;
+  margin-bottom: 2.1875rem;
+}
+
+.tariff-card__list li {
+  font-family: "Nunito-Regular", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+  text-align: left;
+  color: white;
+  margin-bottom: 0.625rem;
+  padding-left: 1.875rem;
+  background-image: url("/image/check.svg");
+  background-repeat: no-repeat;
+  background-size: 0.75rem 0.5625rem;
+  background-position: 1% 50%;
+}
+
+.tariff-card__btn {
+  width: 100%;
 }
 
 body {
@@ -1447,6 +1730,10 @@ h2 {
 
 .text-red {
   color: #FF2E63;
+}
+
+.text-bold {
+  font-weight: 700;
 }
 
 @media (max-width: 767px) {

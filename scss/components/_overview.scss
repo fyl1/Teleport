@@ -1,0 +1,23 @@
+.overview {
+    margin-bottom:rem-calc(140) ;
+
+    // .overview__inner
+
+    &__inner {
+    }
+
+    // .overview__title
+
+    &__title {
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: rem-calc(70);
+    }
+
+    // .overview__video
+
+    &__video {
+        height: rem-calc(763);
+    }
+}
+
