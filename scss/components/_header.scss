@@ -1,0 +1,115 @@
+.page-header {
+  &__inner {
+  }
+
+  &__top {
+    height: 105px;
+    background-color: #085171;
+    padding-top: 8px;
+    &-wrapp {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__footer {
+    background: linear-gradient(
+      180deg,
+      #76d2d3 14.58%,
+      #6dc3c4 28.65%,
+      #45b7b8 43.75%,
+      #45b7b8 67.71%,
+      #70c0c0 80.21%,
+      #76d2d3 94.27%
+    );
+    height: 66px;
+    &-wrapp {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+.header {
+  &-logo {
+    display: flex;
+    align-items: flex-end;
+  }
+  &-logo_2 {
+    display: flex;
+    align-items: flex-end;
+  }
+  &-listing {
+    display: flex;
+    align-items: center;
+    padding-left: 81px;
+  }
+  &-Log_in {
+    display: flex;
+    align-items: center;
+  }
+  &-prices {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-prices-and-lengvich {
+    display: flex;
+  }
+  &-lengvich {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 23px;
+  }
+}
+.page-header__top .container {
+  height: 100%;
+}
+@media (min-width: 480px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1100px) {
+}
+@media (min-width: 1240px) {
+}
+
+@media (min-width: 1686px) {
+}
+@media (min-width: 1786px) {
+}
+@media (max-width: 1199px) {
+  .header-logo_2 {
+    display: none;
+  }
+  .header-listing {
+    display: none;
+  }
+  .header-prices {
+    display: none;
+  }
+  .header-lengvich {
+    display: none;
+  }
+  .page-header__footer-wrapp {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    align-items: center;
+  }
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 579px) {
+}
+@media (max-width: 479px) {
+}
+@media (max-width: 379px) {
+}

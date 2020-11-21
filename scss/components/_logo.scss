@@ -1,0 +1,75 @@
+.logo {
+  // .logo__text
+
+  &__text p {
+    font-family: "Oxygen", sans-serif;
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &-inner {
+    display: flex;
+    align-items: flex-end;
+  }
+  &-img {
+    & a img {
+      height: 78px;
+      width: 106px;
+      object-fit: none;
+    }
+  }
+}
+@media (min-width: 1100px) {
+}
+@media (min-width: 1240px) {
+}
+
+@media (min-width: 1686px) {
+}
+@media (min-width: 1786px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 579px) {
+}
+@media (max-width: 479px) {
+}
+@media (max-width: 379px) {
+}
+@media (min-width: 480px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1100px) {
+}
+@media (min-width: 1240px) {
+}
+
+@media (min-width: 1686px) {
+}
+@media (min-width: 1786px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 737px) {
+  .logo__text {
+    display: none;
+  }
+}
+@media (max-width: 579px) {
+}
+@media (max-width: 479px) {
+}
+@media (max-width: 379px) {
+}
