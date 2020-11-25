@@ -50,12 +50,15 @@ background-color: $c-bac_card;
         transform: translate(-50%);
         &_1{
             top:rem-calc(-80) ;
+            width:rem-calc(150) ;
         }
         &_2{
             top:rem-calc(-120) ;
+            width:rem-calc(200) ;
         }
         &_3{
             top:rem-calc(-140) ;
+            width:rem-calc(210) ;
         }
     }
 
@@ -129,4 +132,32 @@ text-transform: uppercase;
     &__btn {
         width: 100%;
     }
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+    .tariff__list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        // grid-template-rows: repeat(1, 1fr);
+        grid-column-gap:  rem-calc(23);
+        grid-row-gap:  rem-calc(120);
+    }
+
+}
+@media (max-width: 767px) {
+    .tariff-card__list li{
+        font-size: rem-calc(15);
+        line-height:rem-calc(20) ;
+    }
+    .tariff-card__inner{
+        padding: rem-calc(67 28 33 28) ;
+    }
+
+}
+@media (max-width: 579px) {
+}
+@media (max-width: 479px) {
+}
+@media (max-width: 379px) {
 }

@@ -1,0 +1,92 @@
+.subscription{
+    
+     
+    &__btn{
+        display: flex;
+        align-items: center;
+        margin-top:rem-calc(40) ;
+        &-text{
+            padding-left: rem-calc(22);
+            font-family: $f-n_400;
+font-size: rem-calc(18);
+font-weight: 400;
+line-height: rem-calc(25);
+text-align: left;
+color: rgba(255, 255, 255, 0.5);
+
+        }
+
+    }
+    &__list{
+        margin-top: rem-calc(70);
+    }
+    &__item{
+        display: flex;
+    }
+}
+.subscription-card{
+    &__name{
+        & img{
+            width: rem-calc(16);
+            height:  rem-calc(16);
+            margin-right:  rem-calc(7);
+        }
+    }
+    &-active{
+        position: relative;
+        display: none;
+        font-family: $f-n_700;
+        font-size: rem-calc(16);
+        font-weight: 700;
+        line-height: rem-calc(22);
+        text-align: left;
+&:before{
+    position: absolute;
+    content: "";
+    width: rem-calc(6);
+    height:  rem-calc(6);
+    background: #4C67FB;
+    border-radius: 50%;
+}
+
+    }
+
+}
+.subscription-card.active{
+    & .subscription-card-active{
+        display: block;
+    }
+}
+@media (min-width: 480px) {
+}
+@media (min-width: 768px) {
+  
+  
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1100px) {
+}
+@media (min-width: 1240px) {
+}
+
+@media (min-width: 1686px) {
+}
+@media (min-width: 1786px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+  
+ 
+}
+@media (max-width: 767px) {
+  
+  
+}
+@media (max-width: 579px) {
+}
+@media (max-width: 479px) {
+}
+@media (max-width: 379px) {
+}

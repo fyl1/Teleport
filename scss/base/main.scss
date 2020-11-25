@@ -7,7 +7,6 @@
 
 
 @import "../components/_header";
-@import "../components/_main-menu";
 @import "../components/_logo";
 @import "../components/intro";
 @import "../components/footer";
@@ -17,7 +16,15 @@
 @import "../components/_overview";
 @import "../components/_sense";
 @import "../components/_tariff";
+@import "../components/_scenarios";
+@import "../components/_questions";
+@import "../components/profile";
+@import "../components/pagination";
+@import "../components/_header-cabinet";
+@import "../components/subscription";
+@import "../components/_teaching";
+@import "../components/_editing";
 
 
 @import "../pages_scss/page.scss";
-
+@import "../pages_scss/_pages__cabinet";

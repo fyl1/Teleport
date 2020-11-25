@@ -1,0 +1,122 @@
+.profile{
+    position: relative;
+   background-color: $c-bac_card;
+   padding-top: rem-calc(43);
+   min-height: 100vh;
+   z-index: 2;
+
+ 
+   // .profile__inner
+    &__inner{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+
+   
+    }
+     // .profile__logo
+    &__logo{
+        max-width: rem-calc(120);
+        margin-bottom: rem-calc(50);
+    }
+   &-ava{
+       display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  rem-calc(186);
+    height: rem-calc(186);
+    background: linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
+    border-radius: 50%;
+    margin-bottom:rem-calc(36) ;
+        &__img{
+            width: rem-calc(173);
+            height: rem-calc(173);
+            background: linear-gradient(90deg, #614385 0%, #516395 100%);
+            border-radius: 50%;
+            & img{
+                border-radius: 50%;
+            }
+        }
+   }
+   // .profile-list__icon
+   &-list{
+       width: 100%;
+       box-sizing: border-box;
+       &__item{
+
+           display: flex;
+           align-items: center;
+           padding: rem-calc(
+               17 20 16 29
+           );
+           background: rgba(32, 34, 69, 0.5);
+border-radius: 7px;
+margin-bottom: rem-calc(22);
+margin-right: rem-calc(14);
+box-sizing: border-box;
+font-family: $f-n_400;
+font-size: rem-calc(18);
+font-weight: 400;
+line-height: rem-calc(25);
+text-align: left;
+opacity: 0.5;
+color: #ffffff;
+&.active{
+    width: 108%;
+    background: $с-bac;
+
+box-shadow: 6px 8px 29px rgba(0, 0, 0, 0.09);
+opacity: 1;
+
+}
+
+       }
+&__icon{
+ 
+    margin-right: rem-calc(20);
+    svg{
+        width:  rem-calc(26);
+        height: rem-calc(26);
+        max-width:  rem-calc(26);
+        max-height: rem-calc(26);
+        fill: #ffffff;
+    }
+}
+   }
+}
+
+@media (min-width: 480px) {
+}
+@media (min-width: 768px) {
+  
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1100px) {
+}
+@media (min-width: 1240px) {
+}
+
+@media (min-width: 1686px) {
+}
+@media (min-width: 1786px) {
+}
+@media (max-width: 1199px) {
+
+
+}
+@media (max-width: 767px) {
+ 
+}
+@media (max-width: 579px) {
+    .profile-list__item{
+        padding-left: rem-calc(10);
+    }
+}
+@media (max-width: 479px) {
+}
+@media (max-width: 379px) {
+}

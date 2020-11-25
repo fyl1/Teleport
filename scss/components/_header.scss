@@ -15,12 +15,15 @@ margin-right: rem-calc(30);
 
 }
 .header__inner {
-  min-height: 102px;
+  min-height: rem-calc(102);
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   outline: none;
+  &.center{
+    justify-content:center; 
+  }
 
 }
 .main-nav {
@@ -49,28 +52,55 @@ margin-right: rem-calc(30);
   opacity: 0;
   outline: none;
 }
+#menu__toggle:checked ~ .menu__btn  {
+  padding: rem-calc(7);
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  top: 0px;
 
+}
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
   background-color: transparent;
+  
 }
 #menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
   transform: rotate(0);
-  background-color: #ce9e2b ;
   border: none;
+  height: 5px;
+    top: 12px;
+    right: -1px;
 }
 #menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
-  background-color:#ce9e2b ;
   border: none;
+  height: 5px;
+    top: 12px;
+    right: -1px;
 }
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
   border: none;
   outline: none;
+  background-color: $с-bac;
+  & .menu__box--cloud{
+    position: absolute;
+    left: 0;
+    top: rem-calc(20);
+    width: rem-calc(155);
+    height:rem-calc(71);
+
+  }
+  & .menu__box--img{
+    position: absolute;
+   right: 0;
+   top: 85vh;
+    width: rem-calc(195);
+    height:rem-calc(195);
+  }
 }
 
 .menu__btn {
@@ -80,12 +110,13 @@ margin-right: rem-calc(30);
   position: relative;
   right: 5px;
   top: 12px;
-  width: 40px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   color: #dedddd;
   cursor: pointer;
   z-index: 100;
   outline: none;
+ 
 }
 .mein-menu {
   // .mein-menu__box
@@ -100,7 +131,7 @@ margin-right: rem-calc(30);
     position: relative;
 
     &:not(:last-child) {
-      margin-right: 40px;
+      margin-right: 80px;
     }
   }
 
@@ -110,7 +141,7 @@ margin-right: rem-calc(30);
     font-size: rem-calc(18);
     font-family: $f-n_400;
     color: rgb(255, 255, 255);
-    text-transform: uppercase;
+    text-transform: inherit;
     text-align: center;
   }
 }
@@ -121,24 +152,24 @@ margin-right: rem-calc(30);
   display: block;
   position: absolute;
   width: 30px;
-  height: 5px;
-  top: 12px;
+  height: 3px;
+  top: 13px;
   right: 0px;
-  background-color:darken($color:#ffffff, $amount: 25%);
+  background-color:#ffffff;
   transition-duration: 0.25s;
   outline: none;
 }
 .menu__btn > span::before {
   content: "";
-  width: 40px;
+  width: 30px;
 
-  top: 12px;
+  top: 10px;
 }
 .menu__btn > span::after {
   content: "";
-  width: 40px;
+  width: 30px;
 
-  top: -12px;
+  top: -10px;
 }
 
 .menu__box {
@@ -156,7 +187,6 @@ margin-right: rem-calc(30);
   font-size: 30px;
   line-height: 50px;
   text-align: center;
-  letter-spacing: 0.04em;
   border: none;
   outline: none;
   background: transparent;
@@ -167,21 +197,20 @@ margin-right: rem-calc(30);
 
 .menu__item {
   display: block;
-  padding: 0px 24px;
+  padding: 0px 5%;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 20px;
-  line-height: 35px;
+  font-size: rem-calc(27);
+  font-family: $f-n_400;
+  color: rgb(255, 255, 255);
+  text-transform: inherit;
   text-align: center;
-  letter-spacing: 0.04em;
+  line-height: rem-calc(37);
+
   text-decoration: none;
   transition-duration: 0.25s;
   outline: none;
   &:first-child {
-    padding-top: 15px;
+    padding-top: 40px;
   }
 }
 
@@ -193,66 +222,9 @@ margin-right: rem-calc(30);
 
 }
 
-.logo {
-  display: block;
-}
 
-.logo__link {
-  white-space: nowrap;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  outline: none;
-}
 
-.logo__caption {
-  max-width: 310px;
-}
-.menu__li--active {
-}
-.header-menu-btn {
-  display: flex;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding-bottom: 20px;
-  padding-top: 15px;
-}
-.header-top{
-  position: relative;
-  background-color: rgb(24, 30, 32);
-  padding: 10px 0;
 
- &__inner{
-  transform: translate(-50%, 0px);
- 
- }
- & .course-plus{
-    color: green;
-    padding-left: 10px;
-  }
-  & .course-minus{
-    color: red;
-    padding-left: 10px;
-  }
-  & .course-minus{
-    padding-left: 10px;
-  }
-  & li{
-    position: relative;
-    display: flex;
-    font-size: 8px;
-    color:darken($color:#ffffff, $amount: 25%);
-    &::after{
-      content: "•";
-    position: absolute;
-    right: 20px;
-    top:  0px;
-    color:darken($color:#ffffff, $amount: 25%);
-
-    }
-
-  }
-}
 
 
 @media (min-width: 480px) {
@@ -272,12 +244,15 @@ margin-right: rem-calc(30);
 
 @media (max-width: 1199px) {
   .mein-menu__li:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 40px;
   }
 }
 @media (max-width: 991px) {
   .mein-menu__box {
     display: none;
+  }
+  .header__inner{
+    justify-content: flex-start;
   }
   .hamburger-menu {
     position: absolute;
@@ -287,35 +262,14 @@ margin-right: rem-calc(30);
   .header-btn {
     margin-right: 40px;
   }
-  .header-btn {
+
+  .header__logo{
     display: none;
   }
-  .header-top{
-    background-color: rgb(24, 30, 32);
-    padding: 5px 0;
-   & .course-plus{
-      color: green;
-      padding-left: 10px;
-    }
-    & .course-minus{
-      padding-left: 10px;
-    }
-    & li{
-      position: relative;
-      display: flex;
-      font-size: 5px;
-      color:darken($color:#ffffff, $amount: 25%);
-      &::after{
-        content: "•";
-      position: absolute;
-      right: 10px;
-      top:  0px;
-      color:darken($color:#ffffff, $amount: 25%);
-  
-      }
-  
-    }
+  .mein-menu__box{
+    display: none;
   }
+  
 }
 @media (max-width: 767px) {
   .page-header__inner {
@@ -323,14 +277,27 @@ margin-right: rem-calc(30);
     height: 1px;
   }
 
-  .logo {
-    display: none;
-  }
   .menu__btn {
     top: -3px;
   }
   .hamburger-menu{
     top: 20px;
+  }
+  .header-btn__enter{
+    margin-right:rem-calc(15) ;
+  }
+  .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after{
+    width: 20px;
+  }
+  #menu__toggle:checked ~ .menu__btn{
+    width: 30px;
+    height: 30px;
+    top: -15px;
+
+  }
+  #menu__toggle:checked ~ .menu__btn > span{
+top: 10px;
+right: 3px;
   }
 }
 @media (max-width: 479px) {

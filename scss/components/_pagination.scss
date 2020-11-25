@@ -1,0 +1,25 @@
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    width: 100%;
+    &__inner{
+        display: flex;
+ justify-content: center;       
+ align-items: center;
+
+
+    }
+    &__item{
+ height: rem-calc(13);
+ width: rem-calc(13);
+ border-radius: 50%;
+ border: 1px solid  $с-red;
+ margin-right: rem-calc(13);
+ &.active{
+     background-color:$с-red ;
+     height: rem-calc(20);
+     width: rem-calc(20);
+ }
+    }
+}

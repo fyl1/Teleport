@@ -115,3 +115,74 @@ cursor: pointer;
     }
 
   }
+  .btn-exit{
+    cursor: pointer;
+    &:hover .btn__text{
+      color: $с-red;
+      transition: 0.5s;
+    }
+    .btn__text {
+      font-family: $f-n-700;
+      font-style: normal;
+      font-size:rem-calc(18) ;
+      line-height: 1.2;
+       text-transform: inherit;
+      color: #ffffff;
+      font-weight: 700;
+      transition: 0.5s;
+    }
+
+  }
+  .create-page{
+    max-width: rem-calc(308);
+    height: rem-calc(60);
+    border-radius: 0;
+    & .btn__body-wrapp{
+      border-radius: 0;
+    }
+    
+  
+& .btn__text {
+  font-family: $f-n-400;
+  font-style: normal;
+  font-size:rem-calc(22) ;
+  line-height: 1.2;
+   text-transform: inherit;
+  color: #ffffff;
+  font-weight: 400;
+
+}
+
+  }
+  @media (max-width: 767px) {
+    .btn-registration{
+      
+     & .btn__text{
+      font-size:rem-calc(14) ;
+      line-height: 1.2;
+      }
+    }
+    .btn-enter{
+      & .btn__text{
+       font-size:rem-calc(14) ;
+       line-height: 1.2;
+       }
+     }
+     .btn-main .btn__icon {
+      margin-right: rem-calc(10);
+  }
+  }
+  @media (max-width: 579px) {
+  }
+  @media (max-width: 479px) {
+  }
+  @media (max-width: 379px) {
+    .btn-registration{
+      width: rem-calc(140);
+   
+    }
+    .btn-enter{
+      width: rem-calc(90);
+    
+     }
+  }

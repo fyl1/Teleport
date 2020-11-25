@@ -1,26 +1,17 @@
 .logo {
-  // .logo__text
-
-  &__text p {
-    font-family: "Oxygen", sans-serif;
-    font-size: 40px;
-    line-height: 45px;
-    letter-spacing: -0.035em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-
+ display: block;
+ cursor: pointer;
   &-inner {
     display: flex;
     align-items: flex-end;
   }
   &-img {
-    & a img {
-      height: 78px;
-      width: 106px;
-      object-fit: none;
-    }
   }
+}
+.active-logo{
+  position: relative;
+  z-index: 999;
+  display: block;
 }
 @media (min-width: 1100px) {
 }

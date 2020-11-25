@@ -1,0 +1,48 @@
+.teaching{
+     
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        grid-template-rows: repeat(2, 280px);
+        grid-column-gap:  rem-calc(64);
+        grid-row-gap:  rem-calc(67);
+        padding: rem-calc(150 0);
+ 
+    }
+    &__item{
+        background: #3C4070;
+        border-radius: 7px;
+    }
+}
+.teaching-video{
+    position: relative;
+    height: 100%;
+    &__name{
+ position: absolute;
+ bottom: rem-calc(30);
+ left:  rem-calc(30);
+ font-family:$f-n_700;
+font-size: rem-calc(18);
+font-weight: 700;
+line-height: rem-calc(30);
+text-align: left;
+color: #ffffff;
+
+    }
+    &__start{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        border-radius: 50%;
+        & svg{
+            border-radius: 50%;
+        }
+        &:hover{
+            -webkit-box-shadow: 5px 4px 19px 14px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 4px 4px 19px 14px rgba(34, 60, 80, 0.2);
+box-shadow: 5px 5px 19px 14px rgba(34, 60, 80, 0.2);
+        }
+    }
+}

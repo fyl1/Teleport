@@ -30,6 +30,11 @@ h2 {
 .text-bold{
   font-weight: 700;
 }
+.hidden{
+  display: none;
+}
+
+
 
 
 @media (min-width: 480px) {
@@ -51,12 +56,38 @@ h2 {
 @media (max-width: 1199px) {
 }
 @media (max-width: 991px) {
+  h1 {
+    font-size: rem-calc(36);
+   
+    line-height: rem-calc(42);
+
+    }
+    
+    h2 {
+      font-size: rem-calc(26);
+    
+      line-height: rem-calc(30);
+      
+    }
 }
 @media (max-width: 767px) {
   .container{
     width: calc(100% - 30px);
     margin: 0 auto;
   }
+  h1 {
+    font-size: rem-calc(22);
+   
+    line-height: rem-calc(33);
+
+    }
+    
+    h2 {
+      font-size: rem-calc(22);
+    
+      line-height: rem-calc(36);
+      
+    }
 }
 @media (max-width: 579px) {
 }

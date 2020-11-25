@@ -3,6 +3,7 @@ $f-n_700: "Nunito-Bold", sans-serif;
 $f-n_800: "Nunito-ExtraBold", sans-serif;
 .users {
 margin-bottom: rem-calc(140);
+border-radius: 7px;
     // .users__inner
 
     &__inner {
@@ -23,8 +24,8 @@ margin-bottom: rem-calc(140);
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         // grid-template-rows: repeat(1, 1fr);
-        grid-column-gap: 70px;
-        grid-row-gap: 5px;
+        grid-column-gap: rem-calc(70);
+        grid-row-gap: rem-calc(5);
         padding-bottom: rem-calc(40);
     }
 }
@@ -71,4 +72,47 @@ color: rgba($color: #ffffff, $alpha: 0.8);
             margin-bottom: rem-calc(-90);
         }
     }
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+    .users__list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        // grid-template-rows: repeat(1, 1fr);
+        justify-content: center;
+        grid-column-gap: rem-calc(50);
+        grid-row-gap: rem-calc(70);
+        
+    }
+    .users-card{
+        overflow: hidden;
+        border-radius: 7px;
+    }
+
+}
+@media (max-width: 767px) {
+    .users__title{
+        margin-bottom:rem-calc(40) ;
+    }
+    .users__list{
+       
+        grid-row-gap: rem-calc(50);
+        
+    }
+    .users-card__title{
+        font-size: rem-calc(18);
+line-height: rem-calc(25);
+    }
+    .users-card__text{
+        font-size: rem-calc(15);
+        line-height: rem-calc(20);
+    }
+
+}
+@media (max-width: 579px) {
+}
+@media (max-width: 479px) {
+}
+@media (max-width: 379px) {
 }

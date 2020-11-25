@@ -1,0 +1,108 @@
+.main{
+    &__inner{
+      display: flex;
+      min-height: 100vh;
+  
+    }
+    &__left{
+      position: relative;
+      width: 100%;
+      max-width:rem-calc(312) ;
+      min-height: 100vh;
+         &::before{
+      position: absolute;
+      content: "";
+      left: -50%;
+      top: rem-calc(40);
+      background-image: url("../../image/bec-img-profile.png");
+      background-repeat: no-repeat;
+      background-size: rem-calc(274);
+      height: rem-calc(274);
+      width: rem-calc(274);
+      border-radius: 50%;
+      z-index: 1;
+     }
+  
+    }
+    &__right{
+        width: 100%;
+      min-height: 100vh;
+      padding:rem-calc(72 0 40 130);
+    }
+    &__title{
+        font-family: $f-n_700;
+font-size: rem-calc(48);
+font-style: normal;
+font-weight: 700;
+line-height: 1.2;
+text-align: left;
+color: #ffffff;
+
+    }
+  }
+  .main__exit-btn{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: rem-calc(33);
+  }
+  .pages-cabinet .header{
+      height:rem-calc(60);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  }
+  @media (min-width: 480px) {
+}
+@media (min-width: 768px) {
+    .pages-cabinet{
+        .header-btn{
+            display: none;
+            
+        }
+    }
+  
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1100px) {
+}
+@media (min-width: 1240px) {
+}
+
+@media (min-width: 1686px) {
+}
+@media (min-width: 1786px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+    .main__left{
+        display: none;
+    }
+    .pages-cabinet{
+        .header-btn{
+            display: block;
+            text-align: end;
+        }
+    }
+    .main__exit-btn{
+        display: none;
+        
+    }
+    .main__right{
+        padding: 0;
+    }
+
+ 
+}
+@media (max-width: 767px) {
+  
+  
+}
+@media (max-width: 579px) {
+}
+@media (max-width: 479px) {
+}
+@media (max-width: 379px) {
+}
